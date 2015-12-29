@@ -6,7 +6,7 @@ ENV LAUNCHWRAPPER net/minecraft/launchwrapper/1.12/launchwrapper-1.12.jar
 
 RUN curl -SL $FTB_INFINITY_URL -o /tmp/infinity.zip && \
     unzip /tmp/infinity.zip -d $MINECRAFT_HOME && \
-    mkdir -p $MINECRAFT_HOME/libraries && \
+    mkdir -p $MINECRAFT_HOME/$(dirname libraries/${LAUNCHWRAPPER}) && \
     curl -S https://libraries.minecraft.net/$LAUNCHWRAPPER -o $MINECRAFT_HOME/libraries/$LAUNCHWRAPPER && \
     find $MINECRAFT_HOME -name "*.log" -exec rm -f {} \; && \
     rm -rf $MINECRAFT_HOME/ops.* $MINECRAFT_HOME/whitelist.* $MINECRAFT_HOME/logs/* /tmp/*
