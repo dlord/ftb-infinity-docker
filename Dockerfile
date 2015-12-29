@@ -1,7 +1,7 @@
 FROM dlord/minecraft
 MAINTAINER John Paul Alcala jp@jpalcala.com
 
-ENV FTB_INFINITY_URL http://www.creeperrepo.net/FTB2/modpacks%5EFTBInfinity%5E1_2_1%5EFTBInfinityServer.zip
+ENV FTB_INFINITY_URL http://www.creeperrepo.net/FTB2/modpacks%5EFTBInfinity%5E1_3_4%5EFTBInfinityServer.zip
 ENV LAUNCHWRAPPER net/minecraft/launchwrapper/1.11/launchwrapper-1.11.jar
 ENV MINECRAFT_VERSION 1.7.10
 ENV MINECRAFT_OPTS -server -Xms2048m -Xmx3072m -XX:MaxPermSize=256m -XX:+UseParNewGC -XX:+UseConcMarkSweepGC
