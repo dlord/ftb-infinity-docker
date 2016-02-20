@@ -1,4 +1,4 @@
-FROM dlord/minecraft
+FROM dlord/minecraft:java8
 MAINTAINER John Paul Alcala jp@jpalcala.com
 
 ENV FTB_INFINITY_URL http://ftb.cursecdn.com/FTB2/modpacks/FTBInfinity/2_3_5/FTBInfinityServer.zip
