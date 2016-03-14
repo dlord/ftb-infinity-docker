@@ -1,7 +1,7 @@
 FROM dlord/minecraft:java8
 MAINTAINER John Paul Alcala jp@jpalcala.com
 
-ENV FTB_INFINITY_URL http://ftb.cursecdn.com/FTB2/modpacks/FTBInfinity/2_3_5/FTBInfinityServer.zip
+ENV FTB_INFINITY_URL http://ftb.cursecdn.com/FTB2/modpacks/FTBInfinity/2_4_2/FTBInfinityServer.zip
 ENV LAUNCHWRAPPER net/minecraft/launchwrapper/1.12/launchwrapper-1.12.jar
 
 RUN curl -SL $FTB_INFINITY_URL -o /tmp/infinity.zip && \
@@ -13,4 +13,4 @@ RUN curl -SL $FTB_INFINITY_URL -o /tmp/infinity.zip && \
 
 ENV MINECRAFT_VERSION 1.7.10
 ENV MINECRAFT_OPTS -server -Xms2048m -Xmx3072m -XX:MaxPermSize=256m -XX:+UseParNewGC -XX:+UseConcMarkSweepGC
-ENV MINECRAFT_STARTUP_JAR FTBServer-1.7.10-1558.jar
+ENV MINECRAFT_STARTUP_JAR FTBServer-1.7.10-1614.jar
